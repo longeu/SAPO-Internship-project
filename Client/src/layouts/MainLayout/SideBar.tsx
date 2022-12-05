@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { MyRoute } from "../../types";
 import SideBarItem from "./SideBarItem";
+import logo from "../../image/logo3.png"
 interface SideBarProps {
   route: MyRoute;
 }
@@ -26,8 +27,8 @@ function SideBar(props: SideBarProps) {
           className="text-center mt-3"
         >
           <img
-            style={{ width: 140 }}
-            src="	https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/logo/Sapo-logo.svg?v=202111190919"
+            style={{ width: 140, height: 90 }}
+            src={logo}
             alt="AdminLTE Logo"
           />
         </Link>
